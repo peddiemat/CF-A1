@@ -3,29 +3,31 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="shortcut icon" href="img/ppc.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css" type="text/css" />
 	<title>Home</title>
 </head>
 
 <body>
-	<header>
-		<img src="http://via.placeholder.com/200x70" alt="logo" >
-		<nav>
-			<ul role="menubar">
+	<header class="header">
+		<nav class="topnav">
+			<ul role="menubar" class="navigation-list"><container class="h-name">Matthew Peddie</container>
 				<li role="presentation">
-					<a href="index.html" role="menuitem">Home</a>
+					<a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
 				</li>
 				<li role="presentation">
-					<a href="about.html" role="menuitem">About Me</a>
+					<a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
 				</li>
 				<li role="presentation">
-					<a href="contact.html" role="menuitem">Contact</a>
+					<a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
 				</li>
 			</ul>
 		</nav>
 	</header>
-	<div>
+	<div class="body">
   		<img src="http://via.placeholder.com/150x150" alt="Lisa Gringl Portrait">
-  		<h1>Hello World!</h1>
+  		<h2>Hello World!</h2>
  		<p>
 		 My name is Matthew Peddie. I am an aspiring <span>web</span> developer.
 		</p>
@@ -34,13 +36,13 @@
 	<footer>
   		<p>Find me on</p>
   		<a href="https://github.com/peddiemat">
-			<img src="img/git.svg" alt="Github Logo Link" style="width: 30px; height: 30px;">
+			<img src="img/git.svg" alt="Github Logo Link">
   		</a>
 		<a href="https://twitter.com/peddiemat">
-			<img src="img/twitter.svg" alt="Twitter Logo Link" style="width: 30px; height: 30px;">
+			<img src="img/twitter.svg" alt="Twitter Logo Link">
   		</a>
 		<a href="https://www.linkedin.com/in/peddiemat/">
-			<img src="img/linkedin.svg" alt="LinkedIn Logo Link" style="width: 30px; height: 30px;">
+			<img src="img/linkedin.svg" alt="LinkedIn Logo Link">
 		</a>
 	</footer>
 	<script src="js/tota11y.min.js"></script>
