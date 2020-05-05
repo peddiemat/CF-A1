@@ -3,37 +3,85 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="shortcut icon" href="img/ppc.ico" type="image/x-icon" />
-	<title>Home</title>
+	<title>About Me!</title>
 </head>
 
 <body>
 	<header>
-		<img src="http://via.placeholder.com/200x70" alt="logo" >
+		<img src="http://via.placeholder.com/200x70" alt="" >
 		<nav>
-			<ul>
-				<li>
-					<a href="index.html">Home</a>
+			<ul role="menubar">
+				<li role="presentation">
+					<a href="index.html" role="menuitem">Home</a>
 				</li>
-				<li>
-					<a href="about.html">About</a>
+				<li role="presentation">
+					<a href="about.html" role="menuitem">About Me</a>
 				</li>
-				<li>
-					<a href="contact.html">Contact</a>
+				<li role="presentation">
+					<a href="contact.html" role="menuitem">Contact</a>
 				</li>
 			</ul>
 		</nav>
 	</header>
+	<div class="body">
+		<h1 id="about-me">About Me</h1>
+		<hr id="abvpic">
+		<img class="headshot" src="img/full-body.JPG" alt="Full body picture of me wearing caution tape and a trafiic wand on my head">
+		<p id="bio">I started theatre when I was in the fourth grade.  My teacher wrote short plays and we would perform them for the rest of the school in the cafeteria.  I enjoyed performing; however, there was something missing. I would alway notice people working, but I had no clue what they were doing. It was not until the eighth grade that I figured out what they were doing. It was at that point I found my calling. 
+		<br> <br>
+		<br>I am a graduate of the <a href="https://www.cccepa.com" id="CCCEPA" target="_blank">Cobb County Center for Excellence in the Performing Arts</a> at Pebblebrook High School with a major in Technical Theatre. I work around the greater Atlanta area as a freelance Master Electrician and Lighting Designer. I recently received my membership card for I.A.T.S.E. Local 927. I work on a variety of different projects with the Atlanta Lyric and other theatre’s including Lighting Programmer for Atlanta Opera. Most recently, I have been touring as a Head Electrician
+		<br> <br>
+		<br>I did code this website myself, if you find anything that needs attenion please <a id="contact-link" href="contact.html" style="padding: 5px" target="_self">contact</a> me. or you can <a id="email-link" href="mailto:peddiemat@gmail.com" style="padding: 5px">email</a> me.
+		<br>
+		<br>Have a good day!</p>
+	</div>
+	<div class="skills-table">
+		<table>
+			<tr>
+				<thead>
+					<tr>
+						<th>Skills</th>
+						<th>Years Of Experience</th>
+						<th>Level Of Expertise</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>ETC Eos Programmer</td>
+						<td>3</td>
+						<td>Advanced</td>
+					</tr>
+					<tr>
+						<td>Touring Head Electrician</td>
+						<td>1</td>
+						<td>Intermediate</td>
+					</tr>
+					<tr>
+						<td>Regional Production Electrician</td>
+						<td>3</td>
+						<td>Advanced</td>
+					</tr>
+					<tr>
+						<td>HTML Coding</td>
+						<td>0</td>
+						<td>Beginner</td>
+					</tr>
+				</tbody>
+			</tr>
+		</table>
+	</div>
 	<footer>
   		<p>Find me on</p>
   		<a href="https://github.com/peddiemat">
-			<img src="img/git.svg" alt="Github">
+			<img src="img/git.svg" alt="Github Logo Link" style="width: 30px; height: 30px;">
   		</a>
 		<a href="https://twitter.com/peddiemat">
-			<img src="img/twitter.svg" alt="Twitter">
+			<img src="img/twitter.svg" alt="Twitter Logo Link" style="width: 30px; height: 30px;">
   		</a>
 		<a href="https://www.linkedin.com/in/peddiemat/">
-			<img src="img/linkedin.svg" alt="LinkedIn">
+			<img src="img/linkedin.svg" alt="LinkedIn Logo Link" style="width: 30px; height: 30px;">
 		</a>
 	</footer>
+	<script src="js/tota11y.min.js"></script>
 </body>
 </html>

@@ -3,22 +3,22 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="shortcut icon" href="img/ppc.ico" type="image/x-icon" />
-	<title>Home</title>
+	<title>Contact Me!</title>
 </head>
 
 <body>
 	<header>
 		<img src="http://via.placeholder.com/200x70" alt="logo" >
 		<nav>
-			<ul>
-				<li>
-					<a href="index.html">Home</a>
+			<ul role="menubar">
+				<li role="presentation">
+					<a href="index.html" role="menuitem">Home</a>
 				</li>
-				<li>
-					<a href="about.html">About</a>
+				<li role="presentation">
+					<a href="about.html" role="menuitem">About Me</a>
 				</li>
-				<li>
-					<a href="contact.html">Contact</a>
+				<li role="presentation">
+					<a href="contact.html" role="menuitem">Contact</a>
 				</li>
 			</ul>
 		</nav>
@@ -27,23 +27,38 @@
 		Matthew Peddie<br>
 		Atlanta, GA<br>
 		<br>
-		Cell: <a href="tel:4048604838">(404)860-4838</a><br>
+		Cell: <a href="tel:404-860-4838">404.860.4838</a><br>
 		Email: <a href="mailto:peddiemat@gmail.com">peddiemat@gmail.com</a>
 	</div> <!-- END Contact Info -->
 	<div> <!-- Start Contact Me Button -->
 		<a href="mailto:peddiemat@gmail.com">Contact Me!</a>
 	</div> <!-- END Contact Me Button -->
+	<div> <!--  Start Contact Form -->
+		<form action="" method="post" id="contact-form">
+			<label class="standard-label" for="contact-email">E-mail:</label> <!-- VALIDATE WITH JS LATER IN ACHIEVEMENT function emailValitdate(email) with a ClickListener aswell?-->
+			<input type="email" id="contact-email" placeholder="johndoe@email.com" required/>
+			<br />
+			<label class="standard-label" for="contact-tel">Telephone:</label>
+			<input type="tel" id="contact-tel" placeholder="678-999-8212" pattern="\d{3}[\-]\d{3}[\-]\d{4}"/>
+			<br />
+			<label class="standard-label" for="contact-message">Message: </label>
+			<textarea maxlength="240" id="contact-message" placeholder="Compose your message here..." required></textarea>
+			<br />
+			<input type="submit" value="Send Message">
+		</form>
+	</div><!--  END Contact Form -->
 	<footer>
   		<p>Find me on</p>
   		<a href="https://github.com/peddiemat">
-			<img src="img/git.svg" alt="Github" style="width: 30px; height: 30px;">
+			<img src="img/git.svg" alt="Github Logo Link" style="width: 30px; height: 30px;">
   		</a>
 		<a href="https://twitter.com/peddiemat">
-			<img src="img/twitter.svg" alt="Twitter" style="width: 30px; height: 30px;">
+			<img src="img/twitter.svg" alt="Twitter Logo Link" style="width: 30px; height: 30px;">
   		</a>
 		<a href="https://www.linkedin.com/in/peddiemat/">
-			<img src="img/linkedin.svg" alt="LinkedIn" style="width: 30px; height: 30px;">
+			<img src="img/linkedin.svg" alt="LinkedIn Logo Link" style="width: 30px; height: 30px;">
 		</a>
 	</footer>
+	<script src="js/tota11y.min.js"></script>
 </body>
 </html>
