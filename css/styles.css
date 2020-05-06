@@ -3,6 +3,36 @@
 
 * {box-sizing: border-box;}
 
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(0, 48px);
+  }
+  to {
+    transform: translate(-200px, 48px);
+  }
+}
+
 body {
 	font-family: 'Titillium Web', sans-serif;
 	font-weight: 400;
@@ -55,6 +85,24 @@ input[type=submit]:hover input[type=submit]:focus {
 	background-color: hotpink;
 }
 
+.button {
+	border: none;
+	display: inline-block;
+	font-family: inherit;
+	background-color: #333;
+	color: #f1f1f1;
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 3px;
+	border-bottom: 2px solid rgba(0,0,0,0.3);
+	transition: 0.2s opacity;
+}
+
+.button:hover, .button:focus {
+	cursor: pointer;
+	opacity: 0.8;
+}
+
 .page-header {
 	display: flex;
 	background-color: #111;
@@ -68,6 +116,7 @@ input[type=submit]:hover input[type=submit]:focus {
 
 .page-header__item {
 	flex: 0 1 200px;
+	background-color: #111;
 }
 
 .page-header__item:last-child {
@@ -120,17 +169,22 @@ hr {
 	border-radius: 50%;
 }
 
+section.body {margin: 0 250px;}
+
 .grid {
 	display: grid;
-	grid-template-columns: 300px 300px 300px;
+	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 20px;
 	justify-content: center;
 	padding-top: 10px;
 } 
 
 .grid__item img{
-	width: 300px;
-	height: 300px;
+	width: 100%;
+	height: 250px;
+	transition: 0.5s opacity;
+	transition: 0.5s rotate;
+	transition: 0.5s scale;
 }
 
 .grid__item__hover {
@@ -153,9 +207,19 @@ hr {
 
 .grid__item a {text-decoration: none;}
 
-.grid__item img:hover {opacity: 0.4;}
+.grid__item img:hover {
+	opacity: 0.4;
+	transform: scale(1.125, 1.125) rotate(-05deg);
+}
 
 .grid__item__hover:hover {opacity: 1;}
+
+.sun {
+	animation: 20s color-change infinite alternate linear;}
+
+.cloud-front {animation: 80s cloud-move infinite alternate linear}
+
+.cloud-front-right {animation: 80s cloud-move-reverse infinite alternate linear}
 
 .page-footer {
 	clear: both;
@@ -167,4 +231,24 @@ hr {
 footer a img {
 	width: 30px;
 	height: 30px;
+}
+
+@media all and (max-width: 500px) {
+	.grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+	.grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media all and (max-width: 750px) {
+	.grid {grid-gap: 10px;}
+	
+	.grid__item img {height: auto;}
+	
+	h1 {font-size: 22px;}
 }
