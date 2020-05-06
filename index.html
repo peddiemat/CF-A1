@@ -10,9 +10,9 @@
 </head>
 
 <body>
-	<header class="header">
-		<img class="header--image" src="img/Matthew-Peddie.svg" alt="Matthew Peddie" />
-		<nav class="topnav">
+	<header class="page-header">
+		<img class="page-header__item" id="head-logo" src="img/Matthew-Peddie.svg" alt="Matthew Peddie" />
+		<nav class="page-header__item">
 			<ul role="menubar" class="navigation-list">
 				<li role="presentation">
 					<a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
@@ -21,30 +21,35 @@
 					<a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
 				</li>
 				<li role="presentation">
+					<a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+				</li>
+				<li role="presentation">
 					<a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
 				</li>
 			</ul>
 		</nav>
 	</header>
-	<div class="body">
-  		<img src="http://via.placeholder.com/150x150" alt="Lisa Gringl Portrait">
+	<div class="profile">
+  		<img class="profile__portrait" src="img/headshot.png" alt="Matthew Peddie Portrait">
   		<h1>Hello World!</h1>
  		<p>
 		 My name is Matthew Peddie. I am an aspiring <span>web</span> developer.
 		</p>
   		<!--<a href="#">Check out some of my code</a>-->
 	</div>
-	<footer>
+	<footer class="page-footer">
   		<p>Find me on</p>
-  		<a href="https://github.com/peddiemat">
-			<img src="img/git.svg" alt="Github Logo Link">
-  		</a>
-		<a href="https://twitter.com/peddiemat">
-			<img src="img/twitter.svg" alt="Twitter Logo Link">
-  		</a>
-		<a href="https://www.linkedin.com/in/peddiemat/">
-			<img src="img/linkedin.svg" alt="LinkedIn Logo Link">
-		</a>
+		<div class="page-footer__social-media">
+	  		<a href="https://github.com/peddiemat">
+				<img src="img/git.svg" alt="Github Logo Link">
+  			</a>
+			<a href="https://twitter.com/peddiemat">
+				<img src="img/twitter.svg" alt="Twitter Logo Link">
+  			</a>
+			<a href="https://www.linkedin.com/in/peddiemat/">
+				<img src="img/linkedin.svg" alt="LinkedIn Logo Link">
+			</a>
+		</div>
 	</footer>
 	<script src="js/tota11y.min.js"></script>
 </body>

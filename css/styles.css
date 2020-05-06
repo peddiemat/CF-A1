@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
 
+* {box-sizing: border-box;}
+
 body {
 	font-family: 'Titillium Web', sans-serif;
 	font-weight: 400;
@@ -53,55 +55,42 @@ input[type=submit]:hover input[type=submit]:focus {
 	background-color: hotpink;
 }
 
-header {
+.page-header {
+	display: flex;
 	background-color: #111;
-	position: fixed;
-	top: 0;
 	width: 100%;
-	text-align: center;
+	padding: 20px;
 }
 
-.header--image {
-	width: 200px;
-	float: left;
+.page-header,img {
+	align-content: center;
 }
 
-nav ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	background-color: #111;
-	top: 0;
+.page-header__item {
+	flex: 0 1 200px;
 }
 
-nav li {
-	float: right;
-	background-color: #111;
+.page-header__item:last-child {
+	flex-grow: 1;
+	text-align: right;
+	align-content: flex-end;
 }
 
-nav li a {
+.navigation-list {list-style-type: none;}
+
+.navigation-list li {
 	display: inline-block;
-	color: white;
+	margin-left: 15px;
+}
+
+.body h1 {
 	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	border-left: 1px solid #f1f1f1;
-	border-right: 1px solid #f1f1f1;
+	font-variant: small-caps;
+	font-size: 40px;
+	color: #f1f1f1;
 }
 
-nav li a:hover {
-	background-color: #333;
-	color: white;
-}
-.navigation-list__item--active {
-	background-color: #333;
-}
-
-.body {
-	padding-top: 200px;
-}
-
-#abvpic {
+hr {
 	padding-top: 0;
 	padding-bottom: 0;
 	margin-top: 0;
@@ -111,11 +100,68 @@ nav li a:hover {
 	box-shadow: 2px 2px #111;
 }
 
-.headshot {
+.about__portrait {
 	float: right;
 	width: 500px;
 	height: auto;
 	padding-bottom: 100px;
+}
+
+.profile {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.profile__portrait {
+	float: left;
+	width: 250px;
+	height: auto;
+	margin-right: 40px;
+	border-radius: 50%;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 300px 300px 300px;
+	grid-gap: 20px;
+	justify-content: center;
+	padding-top: 10px;
+} 
+
+.grid__item img{
+	width: 300px;
+	height: 300px;
+}
+
+.grid__item__hover {
+	display: block;
+	color: white;
+	font-size: 30px;
+	/*z-index: 2;
+	position: relative;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	opacity: 0;*/
+	text-align: center;
+	font-variant: small-caps;
+}
+
+.grid__item__hover h3 {font-style: italic;}
+
+.grid__item__hover sup {text-decoration: underline;}
+
+.grid__item a {text-decoration: none;}
+
+.grid__item img:hover {opacity: 0.4;}
+
+.grid__item__hover:hover {opacity: 1;}
+
+.page-footer {
+	clear: both;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
 }
 
 footer a img {

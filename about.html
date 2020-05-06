@@ -10,15 +10,18 @@
 </head>
 
 <body>
-	<header class="header">
-		<img class="header--image" src="img/Matthew-Peddie.svg" alt="Matthew Peddie" />
-		<nav class="topnav">
+	<header class="page-header">
+		<img class="page-header__item" id="head-logo" src="img/Matthew-Peddie.svg" alt="Matthew Peddie" />
+		<nav class="page-header__item">
 			<ul role="menubar" class="navigation-list">
 				<li role="presentation">
 					<a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
 				</li>
 				<li role="presentation">
 					<a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
+				</li>
+				<li role="presentation">
+					<a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
 				</li>
 				<li role="presentation">
 					<a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
@@ -28,8 +31,8 @@
 	</header>
 	<div class="body">
 		<h1 id="about-me">About Me</h1>
-		<hr id="abvpic">
-		<img class="headshot" src="img/full-body.JPG" alt="Full body picture of me wearing caution tape and a trafiic wand on my head">
+		<hr>
+		<img class="about__portrait" src="img/full-body.JPG" alt="Full body picture of me wearing caution tape and a trafiic wand on my head">
 		<p id="bio">I started theatre when I was in the fourth grade.  My teacher wrote short plays and we would perform them for the rest of the school in the cafeteria.  I enjoyed performing; however, there was something missing. I would alway notice people working, but I had no clue what they were doing. It was not until the eighth grade that I figured out what they were doing. It was at that point I found my calling. 
 		<br> <br>
 		<br>I am a graduate of the <a href="https://www.cccepa.com" id="CCCEPA" target="_blank">Cobb County Center for Excellence in the Performing Arts</a> at Pebblebrook High School with a major in Technical Theatre. I work around the greater Atlanta area as a freelance Master Electrician and Lighting Designer. I recently received my membership card for I.A.T.S.E. Local 927. I work on a variety of different projects with the Atlanta Lyric and other theatre’s including Lighting Programmer for Atlanta Opera. Most recently, I have been touring as a Head Electrician
@@ -73,17 +76,19 @@
 			</tr>
 		</table>
 	</div>
-	<footer>
+	<footer class="page-footer">
   		<p>Find me on</p>
-  		<a href="https://github.com/peddiemat">
-			<img src="img/git.svg" alt="Github Logo Link" style="width: 30px; height: 30px;">
-  		</a>
-		<a href="https://twitter.com/peddiemat">
-			<img src="img/twitter.svg" alt="Twitter Logo Link" style="width: 30px; height: 30px;">
-  		</a>
-		<a href="https://www.linkedin.com/in/peddiemat/">
-			<img src="img/linkedin.svg" alt="LinkedIn Logo Link" style="width: 30px; height: 30px;">
-		</a>
+		<div class="page-footer__social-media">
+	  		<a href="https://github.com/peddiemat">
+				<img src="img/git.svg" alt="Github Logo Link">
+  			</a>
+			<a href="https://twitter.com/peddiemat">
+				<img src="img/twitter.svg" alt="Twitter Logo Link">
+  			</a>
+			<a href="https://www.linkedin.com/in/peddiemat/">
+				<img src="img/linkedin.svg" alt="LinkedIn Logo Link">
+			</a>
+		</div>
 	</footer>
 	<script src="js/tota11y.min.js"></script>
 </body>

@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="Description" content="Matthew Peddie's Lighting Portfolio">
+	<meta name="Keywords" content="LD,PE,Lighting,theatre,theater,lighting design, production electrician">
+	<meta name="author" content="Matthew Peddie>">
+<title>Show 1</title>
+<link rel="stylesheet" href="Main.css">
+</head>
+
+<body>
+	<div class="header">
+		<h1 class="h-name"><b>MATTHEW PEDDIE</b></h1>
+		<p class="h-title"><b>Head Electrician</b></p>
+	</div>
+	
+	<nav class="navigation">
+		<ul class="topnav">
+			<li class="topnav"><a href="../../index.html">HOME</a></li>
+			<li class="topnav"><a href="../../2_About/About.html">ABOUT</a></li>
+			<li class="topnav"><a class="active" href="../00_Show Page/ShowPage.html">SHOWS</a></li>
+			<li class="topnav"><a href="../../4_Resume/Resume.html">RÉSUMÉ</a></li>
+			<li class="topnav"><a href="../../5_Contact/Contact.html">CONTACT</a></li>
+		</ul>
+	</nav>
+<div class="body">
+	<h2 id="show-title">YOUR HAPPY HOLIDAY</h2>
+	<h2 id="tour-level">December, 2018</h2>
+	<h4 id="show-position">Lighting Designer</h4>
+	
+	<section id="slideshow">
+	<div class="slideshow-container">
+	
+		<div class="mySlides Fade">
+			<div class="numbertext">1 / 6</div>
+			<img src="Images/1.jpg" style="width: 100%;" alt="yhh 1">
+		</div>
+	
+		<div class="mySlides Fade">
+			<div class="numbertext">2 / 6</div>
+			<img src="Images/2.jpg" style="width: 100%;" alt="yhh 2">
+		</div>
+	
+		<div class="mySlides Fade">
+			<div class="numbertext">3 / 6</div>
+			<img src="Images/3.jpg" style="width: 100%;" alt="yhh 3">
+		</div>
+	
+		<div class="mySlides Fade">
+			<div class="numbertext">4 / 6</div>
+			<img src="Images/4.jpg" style="width: 100%;" alt="yhh 4">
+		</div>
+
+		<div class="mySlides Fade">
+			<div class="numbertext">5 / 6</div>
+			<img src="Images/5.jpg" style="width: 100%;" alt="yhh 5">
+		</div>
+
+		<div class="mySlides Fade">
+			<div class="numbertext">6 / 6</div>
+			<img src="Images/6.jpg" style="width: 100%;" alt="yhh 6">
+		</div>
+		
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onClick="plusSlides(1)">&#10095;</a>
+			
+	</div>
+				
+	<div style="text-align:center">
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+	</div>
+	
+	
+	<script>
+	var slideIndex = 0;
+		showSlides();
+		
+	function plusSlides(n)  {
+		showSlides (slideIndex += n) ;
+	}
+		
+	function currentSlide(n)  {
+		showSlides (slideIndex = n)
+	}
+		
+	function showSlides() {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName ("dot");
+		for (i = 0; i < slides.length; i++)  {
+			slides[i].style.display = "none";
+		}
+		slideIndex++;
+		if (slideIndex > slides.length) {slideIndex = 1}
+		for (i = 0; i < dots.length; i++)  {
+			dots[i].className = dots[i].className.replace("active", "");
+		}
+		slides[slideIndex-1].style.display = "block";
+		dots[slideIndex-1].className += " active";
+		setTimeout(showSlides, 6000); //change slide, 6 sec
+	}
+	</script>
+	</section>
+	
+	<div class="production-info">
+	<h3>Worklight Productions</h3>
+		<div class="flex-container">
+			<div>
+				<ul> 
+					<li><b class="tites">Directed by:</b> Mary Nye Bennett</li>
+					<li><b class="tites">Choreography by:</b> Ricardo Aponte</li>
+					<li><b class="tites">Scenic Design:</b>Stephanie Polhemus</li>
+					<li><b class="tites">Lighting Design:</b> Matthew Peddie</li>
+					<li><b class="tites">Sound Design:</b> Alan Kirkland</li>
+					<li><b class="tites">Costume Design:</b> Billy Nye</li>
+					<li><b class="tites">Production Electrician:</b> John Smith</li>
+					<li><b class="tites">Production Photos by:</b> Daniel Pattillo</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+	
+<div class="Footer">
+	<div class="foot-row">
+		<div class="foot-col">
+			<img class="foot-logo" src="../../High Resolution LOGO/White on Transparent.png" alt="Peddie Logo" title="Matthew Peddie Logo">
+		</div>
+		<div class="foot-col">
+			<ul class="bot-nav">
+				<li id="site-map-head">Site Map</li>
+				<hr>
+				<li><a href="../../index.html">Home</a></li>
+				<li><a href="../../2_About/About.html">About</a></li>
+				<li><a href="../../3_Shows/00_Show Page/ShowPage.html">Shows</a></li>
+					<ul class="shows-sub">
+						<li><a class="active" href="../1/Show 1.html">Bandstand</a></li>
+						<li><a href="../2/Show 2.html">Jersey Boys</a></li>
+						<li><a href="../3/Show 3.html">Murder On The Orient Express</a></li>
+						<li><a href="../4/Show 4.html">South Pacific</a></li>
+						<li><a href="../5/Show 5.html">Wedding Singer</a></li>
+						<li><a href="../6/Show 6.html">SKID</a></li>
+						<li><a href="../7/Show 7.html">Elf: The Musical</a></li>
+						<li><a href="../8/Show 8.html">Your Happy Holiday</a></li>
+						<li><a href="../9/Show 9.html">42<sup>nd</sup> Street</a></li>
+					</ul>
+				<li><a href="../../4_Resume/Resume.html">Résumé</a></li>
+				<li><a href="../../5_Contact/Contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div class="foot-col">
+			<ul class="social-media">
+				<li id="social-media-head">Connect With Me</li>
+				<hr>
+				<li><a href="https://www.facebook.com/mpeddie1" target="_blank">
+					<img src="../../Social Icons/48/facebook-Icon.png" alt="Facebook Logo" style="width: 40px;height: 40px">
+					</a></li>
+				<li><a href="https://twitter.com/peddiemat" target="_blank">
+					<img src="../../Social Icons/48/Twitter-Icon-2.png" alt="Twitter Logo" style="width: 40px;height: 40px">
+					</a></li>
+				<li><a href="https://www.instagram.com/peddielights/" target="_blank">
+					<img src="../../Social Icons/48/Instagram-Icon.png" alt="Instagram Logo" style="width: 40px;height: 40px">
+					</a></li>
+				<li><a href="https://www.linkedin.com/in/peddiemat" target="_blank">
+					<img src="../../Social Icons/48/Linkedin.png" alt="LinkedIn" style="width: 40px;height: 40px">
+					</a></li>
+				<li><a href="mailto:peddiemat@gmail.com">
+					<img src="../../Social Icons/48/Email-Icon.png" alt="Email" style="width: 40px;height: 40px">
+					</a></li>
+			</ul>
+		</div>
+		<div class="foot-col">
+		<!-- BLANK SPACE -->
+		</div>
+	</div>
+	<div class="copyright">
+		<p><b>©2020 Matthew Peddie</b></p>
+	</div>
+</div>
+</body>
+</html>
