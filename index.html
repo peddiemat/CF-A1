@@ -6,7 +6,8 @@
 	<link rel="shortcut icon" href="img/ppc.ico" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/styles.css" type="text/css" />
+	<!--<link rel="stylesheet" href="css/styles.css" type="text/css" /> MAIN CSS-->
+	<link rel="stylesheet" href="css/style.production.css" type="text/css" />
 	<title>Home</title>
 </head>
 
@@ -30,13 +31,18 @@
 			</ul>
 		</nav>
 	</header>
-	<div class="profile">
-  		<img class="profile__portrait" src="img/headshot.png" alt="Matthew Peddie Portrait">
-  		<h1>Hello World!</h1>
- 		<p>
-		 My name is Matthew Peddie. I am an aspiring <span>web</span> developer.
-		</p>
-  		<!--<a href="#">Check out some of my code</a>-->
+	<div class="bkg-img">
+		<img id="bkg-img" src="img/newsies.JPG" alt="" />
+		<div class="profile" id="index-body">
+  			<img class="profile-item profile__portrait" src="img/headshot.png" alt="Matthew Peddie Portrait">
+  			<div class="profile-item">
+				<h1>Welcome!</h1>
+ 				<p>
+		 		I am a touring Head Electrician as well as a regional Lighting Designer.
+				</p>
+  				<!--<a href="#">Check out some of my code</a>-->
+			</div>
+		</div>
 	</div>
 	<footer class="page-footer">
   		<p>Find me on</p>

@@ -6,7 +6,8 @@
 	<link rel="shortcut icon" href="img/ppc.ico" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/styles.css" type="text/css" />
+	<!--<link rel="stylesheet" href="css/styles.css" type="text/css" /> MAIN CSS-->
+	<link rel="stylesheet" href="css/style.production.css" type="text/css" />
 	<title>Contact Me!</title>
 </head>
 
@@ -30,29 +31,33 @@
 			</ul>
 		</nav>
 	</header>
-	<div class="body">
+	<div class="contact-form">
 	<div> <!-- Start Contact Info  -->
-		Matthew Peddie<br>
-		Atlanta, GA<br>
+		<h1>Matthew Peddie</h1>
 		<br>
-		Cell: <a href="tel:404-860-4838" aria-label="Cell phone number">404.860.4838</a><br>
-		Email: <a href="mailto:peddiemat@gmail.com">peddiemat@gmail.com</a>
+		<h2>Atlanta, GA</h2>
+		<br>
+		<br>
+		<h3>Cell: <a href="tel:404-860-4838" aria-label="Cell phone number">404.860.4838</a></h3>
+		<br>
+		<h3>Email: <a href="mailto:peddiemat@gmail.com">peddiemat@gmail.com</a></h3>
 	</div> <!-- END Contact Info -->
 	<div> <!-- Start Contact Me Button -->
-		<a href="mailto:peddiemat@gmail.com">Contact Me!</a>
+		<button class="button"><a href="mailto:peddiemat@gmail.com" id="contact-me-button">Contact Me!</a></button>
 	</div> <!-- END Contact Me Button -->
-	<div> <!--  Start Contact Form -->
-		<form action="" method="post" id="contact-form">
-			<label class="standard-label" for="contact-email">E-mail:</label> <!-- VALIDATE WITH JS LATER IN ACHIEVEMENT function emailValitdate(email) with a ClickListener aswell?-->
+	<div class="contact-form"> <!--  Start Contact Form -->
+		<form action="" method="post" id="contact-form" class="contact-form__form">
+			<label class="contact-form__item" for="contact-email">E-mail:</label> <!-- VALIDATE WITH JS LATER IN ACHIEVEMENT function emailValitdate(email) with a ClickListener aswell?-->
 			<input type="email" id="contact-email" placeholder="johndoe@email.com" required/>
 			<br />
-			<label class="standard-label" for="contact-tel">Telephone:</label>
+			<label class="contact-form__item" for="contact-tel">Telephone:</label>
 			<input type="tel" id="contact-tel" placeholder="678-999-8212" pattern="\d{3}[\-]\d{3}[\-]\d{4}"/>
 			<br />
-			<label class="standard-label" for="contact-message">Message: </label>
+			<label class="contact-form__item" for="contact-message">Message: </label>
 			<textarea maxlength="240" id="contact-message" placeholder="Compose your message here..." required></textarea>
 			<br />
 			<input type="submit" class="submit-button" value="Send Message">
+			<input type="reset" value="Reset" id="reset" />
 		</form>
 	</div>
 	</div><!--  END Contact Form -->
