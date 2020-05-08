@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="Description" content="Matthew Peddie's Lighting Portfolio">
+	<meta name="Keywords" content="LD,PE,Lighting,theatre,theater,lighting design, production electrician">
+	<meta name="author" content="Matthew Peddie>">
+	<title>Bandstand</title>
+	<!--<link rel="stylesheet" href="../../css/styles.css" type="text/css" /> MAIN CSS-->
+	<link rel="stylesheet" href="../../css/style.production.css" type="text/css" />
+	<!--<link rel="stylesheet" href="../../css/shows.css" type="text/css" /> SHOW PAGE CSS-->
+	<link rel="stylesheet" href="../../css/shows.production.css" type="text/css" />
+</head>
+
+<body>
+	<header class="page-header">
+		<img class="page-header__item" id="head-logo" src="../../img/Matthew-Peddie.svg" alt="Matthew Peddie" />
+		<nav class="page-header__item">
+			<ul role="menubar" class="navigation-list">
+				<li role="presentation">
+					<a href="../../index.html" role="menuitem" class="navigation-list__item">Home</a>
+				</li>
+				<li role="presentation">
+					<a href="../../about.html" role="menuitem" class="navigation-list__item">About Me</a>
+				</li>
+				<li role="presentation">
+					<a href="../../work.html" role="menuitem" class="navigation-list__item">Work</a>
+				</li>
+				<li role="presentation">
+					<a href="../../contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+<div class="body">
+	<h2 id="show-title">SKID</h2>
+	<h2 id="tour-level">March, 2019</h2>
+	<h4 id="show-position">Lighting Designer</h4>
+	
+	<section id="slideshow">
+	<div class="slideshow-container">
+	
+		<div class="mySlides Fade">
+			<div class="numbertext">1 / 6</div>
+			<img src="img/1.jpg" alt="">
+		</div>
+	
+		<div class="mySlides Fade">
+			<div class="numbertext">2 / 6</div>
+			<img src="img/2.jpg" alt="">
+		</div>
+	
+		<div class="mySlides Fade">
+			<div class="numbertext">3 / 6</div>
+			<img src="img/3.jpg" alt="">
+		</div>
+	
+		<div class="mySlides Fade">
+			<div class="numbertext">4 / 6</div>
+			<img src="img/4.jpg" alt="">
+		</div>
+
+		<div class="mySlides Fade">
+			<div class="numbertext">5 / 6</div>
+			<img src="img/5.jpg" alt="">
+		</div>
+
+		<div class="mySlides Fade">
+			<div class="numbertext">6 / 6</div>
+			<img src="img/6.jpg" alt="">
+		</div>
+		
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onClick="plusSlides(1)">&#10095;</a>
+			
+	</div>
+				
+	<div style="text-align:center">
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+	</div>
+	
+	
+	<script>
+	var slideIndex = 0;
+		showSlides();
+		
+	function plusSlides(n)  {
+		showSlides (slideIndex += n) ;
+	}
+		
+	function currentSlide(n)  {
+		showSlides (slideIndex = n)
+	}
+		
+	function showSlides() {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName ("dot");
+		for (i = 0; i < slides.length; i++)  {
+			slides[i].style.display = "none";
+		}
+		slideIndex++;
+		if (slideIndex > slides.length) {slideIndex = 1}
+		for (i = 0; i < dots.length; i++)  {
+			dots[i].className = dots[i].className.replace("active", "");
+		}
+		slides[slideIndex-1].style.display = "block";
+		dots[slideIndex-1].className += " active";
+		setTimeout(showSlides, 6000); //change slide, 6 sec
+	}
+	</script>
+	</section>
+	
+	<div class="production-info">
+	<h3>Komansé Dance Theater</h3>
+		<div class="flex-container">
+			<div>
+				<ul> 
+					<li><b class="tites">Choreographed by:</b> Raianna Brown</li>
+					<li><b class="tites">Lighting Design:</b> Matthew Peddie</li>
+					<li><b class="tites">Assistant LD/Programmer:</b> John Smith</li>
+					<li><b class="tites">Phots by:</b> Chelsea Burks</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+	
+<footer class="page-footer">
+  		<p>Find me on</p>
+		<div class="page-footer__social-media">
+	  		<a href="https://github.com/peddiemat">
+				<img src="../../img/git.svg" alt="Github Logo Link">
+  			</a>
+			<a href="https://twitter.com/peddiemat">
+				<img src="../../img/twitter.svg" alt="Twitter Logo Link">
+  			</a>
+			<a href="https://www.linkedin.com/in/peddiemat/">
+				<img src="../../img/linkedin.svg" alt="LinkedIn Logo Link">
+			</a>
+		</div>
+	</footer>
+	<script src="js/tota11y.min.js"></script>
+</body>
+</html>
