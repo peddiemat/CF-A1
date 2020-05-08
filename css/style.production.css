@@ -232,6 +232,14 @@ hr {
 	border-radius: 50%;
 }
 
+.about__portrait {
+	float: right;
+	width: 25%;
+	height: auto;
+	margin-right: 40px;
+	border-radius: 3%;
+}
+
 .grid {
 	display: -ms-grid;
 	display: grid;
