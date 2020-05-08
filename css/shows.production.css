@@ -8,6 +8,8 @@
 @charset "UTF-8";
 /* CSS Document */
 
+* {-webkit-box-sizing: border-box;box-sizing: border-box;}
+
 .slideshow-container {
 	max-width: 1000px;
 	position: relative;
